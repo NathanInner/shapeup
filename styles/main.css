@@ -76,6 +76,12 @@ aside h3 {
     font-size: 120%;
 }
 
+aside p {
+    padding-top: 50px;
+    color: maroon;
+    font-size: 120%;
+}
+
 footer {
     clear: both;
     background-color:steelblue;
