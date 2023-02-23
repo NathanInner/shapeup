@@ -25,11 +25,10 @@ header h2 {
     font-style: italic;
     color: steelblue;
     text-shadow: 3px 3px 7px steelblue;
-
 }
 
 header h2, header h3 {
-    padding: .5em 0;
+    padding: .5em 4em;
 }
 
 h1 {
@@ -51,6 +50,9 @@ h1, h2, h3, h4 {
 header img {
     float: left;
     margin: 0 .75em;
+    max-width: 140px;
+    min-width:70px;
+    width: 100%;
 }
 
 blockquote {
@@ -283,4 +285,47 @@ footer p{
 html {
     background-color: lightsteelblue;
     background-image: url(../images/bgtile.jpg);
+}
+
+#mobilemenu {
+    display: none;
+}
+
+/*===================================================
+
+                Media Queries
+===================================================*/
+
+@media only screen and (max-width: 900px) {
+    body {
+        box-shadow:none;
+        border: none;
+        font-size: 90%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #nav_menu {
+        display: none;
+    }
+
+    #mobilemenu {
+        display: block;
+    }
+    .slicknav_menu {
+        background-color: steelblue;
+    }
+    section, aside, #rightcol {
+        float: none;
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    #leftol{
+        display: none;
+    }
+}
+
+@media only screen and(max-width: 479px) {
+    
 }
